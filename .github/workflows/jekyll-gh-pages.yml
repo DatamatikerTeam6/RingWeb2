@@ -35,6 +35,9 @@ jobs:
         with:
           source: ./
           destination: ./_site
+          include: |
+            content/  # Include content folder
+            content/about.md  # Include about.md
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
